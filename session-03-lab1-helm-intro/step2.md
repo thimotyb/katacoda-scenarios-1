@@ -21,7 +21,10 @@ Error: no repositories to show
 
 Add the stable public repository to your helm context
 
+OLD:
 `helm repo add stable https://kubernetes-charts.storage.googleapis.com/`{{execute}}
+NEW:
+helm repo add stable https://charts.helm.sh/stable 
 
 With this command, we are adding the repository at https://kubernetes-charts.storage.googleapis.com/ to our local Helm configuration with the name 'stable'. When we want to interact with this repository, we can reference it using its name.
 
